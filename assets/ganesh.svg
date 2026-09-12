@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+<defs>
+ <filter id="g"><feGaussianBlur stdDeviation="7"/></filter>
+ <radialGradient id="halo"><stop offset="0" stop-color="#ead19b" stop-opacity=".75"/><stop offset="1" stop-color="#ead19b" stop-opacity="0"/></radialGradient>
+</defs>
+<circle cx="250" cy="250" r="220" fill="url(#halo)" filter="url(#g)"/>
+<g fill="none" stroke="#d9b76d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M170 180c0-67 37-105 80-105s80 38 80 105c0 50-28 83-80 83s-80-33-80-83Z"/>
+ <path d="M188 165c-22-42-61-45-81-14 24 1 47 13 62 36"/>
+ <path d="M312 165c22-42 61-45 81-14-24 1-47 13-62 36"/>
+ <path d="M250 255c-4 47-1 85 30 105 29 19 47-7 32-29-13-19-40-24-62-18"/>
+ <path d="M250 255c4 47 1 85-30 105-29 19-47-7-32-29 13-19 40-24 62-18"/>
+ <path d="M195 335c-38 15-62 43-62 76h234c0-33-24-61-62-76"/>
+ <path d="M155 410c20-19 45-29 68-29M345 410c-20-19-45-29-68-29"/>
+ <path d="M224 142c10-13 42-13 52 0"/>
+ <path d="M213 202c12 9 25 9 37 0M287 202c-12 9-25 9-37 0"/>
+ <circle cx="215" cy="178" r="5" fill="#d9b76d"/><circle cx="285" cy="178" r="5" fill="#d9b76d"/>
+ <path d="M250 116v27"/>
+</g>
+<g fill="#d9b76d">
+ <path d="M250 44l8 20 22 1-17 14 6 21-19-12-19 12 6-21-17-14 22-1Z"/>
+</g>
+</svg>
