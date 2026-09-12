@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8f3e9">
+<meta name="description" content="Aakash & Sunidhi — Wedding Invitation, 18–19 October 2026, Dehradun">
+<title>Aakash & Sunidhi — Wedding Invitation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#fbf7ef;
+  --paper2:#f4ecdc;
+  --ink:#28362f;
+  --muted:#68746b;
+  --green:#456451;
+  --green2:#6f8d73;
+  --gold:#b28a48;
+  --gold2:#d5b878;
+  --rose:#9b665c;
+  --white:#fffdf8;
+  --shadow:0 18px 55px rgba(45,58,48,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  background:var(--paper);
+  font-family:"DM Sans",system-ui,sans-serif;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed; inset:0; pointer-events:none; z-index:20;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(213,184,120,.10), transparent 28%),
+    radial-gradient(circle at 80% 70%, rgba(111,141,115,.09), transparent 30%);
+}
+h1,h2,h3,p{margin:0}
+.serif{font-family:"Cormorant Garamond",Georgia,serif}
+a{text-decoration:none;color:inherit}
+.container{width:min(1080px,92%);margin:auto}
+
+/* Opening */
+#intro{
+  min-height:100svh;
+  display:grid;
+  place-items:center;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 28%, #fffdf8 0 12%, transparent 38%),
+    linear-gradient(145deg,#f7f0e3,#fbf8f0 48%,#eef2e8);
+}
+.intro-border{
+  position:absolute;inset:18px;border:1px solid rgba(178,138,72,.35);
+  border-radius:28px;pointer-events:none;
+}
+.intro-border:before,.intro-border:after{
+  content:"✿";position:absolute;color:var(--gold);font-size:28px;
+  background:var(--paper);padding:0 10px;
+}
+.intro-border:before{top:-17px;left:50%;transform:translateX(-50%)}
+.intro-border:after{bottom:-17px;left:50%;transform:translateX(-50%)}
+.peacock{
+  position:absolute;opacity:.20;filter:drop-shadow(0 8px 14px rgba(44,75,54,.08));
+  animation:float 6s ease-in-out infinite;
+}
+.peacock.left{left:-15px;bottom:8%;width:170px}
+.peacock.right{right:-20px;top:11%;width:180px;animation-delay:-2.5s;transform:scaleX(-1)}
+.peacock svg{width:100%;height:auto}
+@keyframes float{50%{transform:translateY(-12px) rotate(1deg)}}
+.peacock.right{animation-name:floatFlip}
+@keyframes floatFlip{50%{transform:scaleX(-1) translateY(-12px) rotate(1deg)}}
+
+.intro-content{text-align:center;padding:70px 18px;position:relative;z-index:2}
+.om{
+  font-size:18px;letter-spacing:5px;color:var(--gold);margin-bottom:18px;
+}
+.ganesh{
+  width:105px;height:145px;object-fit:contain;display:block;margin:0 auto 14px;
+  filter:drop-shadow(0 8px 12px rgba(71,52,28,.13));
+  mix-blend-mode:multiply;
+}
+.blessing{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}
+.intro-rule{margin:24px auto;width:170px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.names{
+  font-size:clamp(62px,11vw,112px);font-weight:500;line-height:.82;
+  color:var(--green);letter-spacing:-2px;
+}
+.names .amp{font-size:.55em;color:var(--gold);display:inline-block;margin:0 10px}
+.date{margin-top:26px;font-size:13px;letter-spacing:5px;text-transform:uppercase;color:var(--muted)}
+.tagline{max-width:560px;margin:20px auto 0;color:#637067;line-height:1.8;font-size:15px}
+.open-btn{
+  display:inline-flex;align-items:center;gap:10px;margin-top:30px;
+  padding:13px 24px;border:1px solid rgba(178,138,72,.55);border-radius:999px;
+  background:rgba(255,255,255,.58);font-size:13px;letter-spacing:1px;
+  transition:.25s;
+}
+.open-btn:hover{background:#fff;transform:translateY(-2px)}
+.scroll{display:block;margin-top:32px;color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase}
+
+/* Common sections */
+section{position:relative;padding:100px 0}
+.section-kicker{text-align:center;color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:11px;margin-bottom:12px}
+.section-title{text-align:center;font-size:clamp(40px,6vw,62px);font-weight:500;color:var(--green)}
+.flower-rule{display:flex;align-items:center;justify-content:center;gap:12px;margin:18px auto 0;color:var(--gold)}
+.flower-rule:before,.flower-rule:after{content:"";width:110px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.flower-rule:after{background:linear-gradient(90deg,var(--gold),transparent)}
+.flower-rule span{font-size:20px}
+.intro-text{text-align:center;max-width:700px;margin:30px auto 0;line-height:1.9;color:var(--muted);font-size:15px}
+
+/* Invitation */
+.invite{background:linear-gradient(#fbf7ef,#f5eee2)}
+.invite-card{
+  width:min(840px,94%);margin:45px auto 0;padding:55px 50px;
+  background:rgba(255,253,248,.75);border:1px solid rgba(178,138,72,.25);
+  border-radius:28px;box-shadow:var(--shadow);position:relative;text-align:center;
+}
+.invite-card:before{
+  content:"";position:absolute;inset:12px;border:1px solid rgba(178,138,72,.15);
+  border-radius:20px;pointer-events:none;
+}
+.invite-card p{position:relative;max-width:650px;margin:auto;color:var(--muted);line-height:1.95;font-size:16px}
+.parents{
+  margin-top:30px;display:flex;justify-content:center;gap:34px;align-items:center;
+  font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;color:var(--green)
+}
+.parents i{font-style:normal;color:var(--gold);font-size:18px}
+
+/* Events */
+.events{background:#eef2e9}
+.events-grid{margin-top:50px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.event{
+  background:rgba(255,253,248,.88);border:1px solid rgba(111,141,115,.20);
+  border-radius:22px;padding:26px 20px;min-height:300px;
+  display:flex;flex-direction:column;box-shadow:0 12px 35px rgba(50,75,57,.07);
+  position:relative;overflow:hidden;
+}
+.event:after{
+  content:"✿";position:absolute;right:14px;bottom:8px;font-size:44px;color:rgba(178,138,72,.10);
+}
+.event-no{font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase}
+.event-date{font-size:13px;letter-spacing:1.5px;margin-top:9px;color:var(--muted)}
+.event h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:30px;line-height:1.05;font-weight:600;margin-top:16px;color:var(--green)}
+.event-time{margin-top:12px;font-weight:600;font-size:13px;color:var(--rose)}
+.venue{margin-top:auto;padding-top:20px;color:var(--muted);line-height:1.55;font-size:13px}
+.map{
+  display:inline-block;margin-top:12px;color:var(--green);font-size:11px;
+  letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid var(--gold2)
+}
+
+/* Gallery */
+.gallery{background:var(--paper)}
+.gallery-grid{
+  width:min(1000px,92%);margin:50px auto 0;
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+}
+.photo{
+  aspect-ratio:4/5;overflow:hidden;border-radius:20px;
+  background:#e7e4db;border:1px solid rgba(178,138,72,.20);
+  box-shadow:0 14px 38px rgba(50,60,50,.10);position:relative;
+}
+.photo img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .8s ease}
+.photo:hover img{transform:scale(1.035)}
+.photo:after{content:"";position:absolute;inset:8px;border:1px solid rgba(255,255,255,.34);border-radius:15px;pointer-events:none}
+
+/* Message */
+.message{background:linear-gradient(135deg,#f4ecdc,#fbf7ef)}
+.message-card{width:min(850px,94%);margin:45px auto 0;text-align:center}
+.quote{
+  font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(30px,5vw,48px);
+  line-height:1.18;color:var(--green);font-weight:500
+}
+.message-copy{margin:26px auto 0;max-width:680px;color:var(--muted);line-height:1.95;font-size:15px}
+.signature{margin-top:28px;color:var(--green);font-family:"Cormorant Garamond",Georgia,serif;font-size:25px}
+.rsvp{
+  display:inline-flex;align-items:center;gap:9px;margin-top:28px;padding:13px 22px;
+  border-radius:999px;background:var(--green);color:white;font-size:12px;letter-spacing:1px;
+  box-shadow:0 10px 25px rgba(69,100,81,.20)
+}
+
+/* Countdown */
+.countdown{background:#2f4739;color:#fffdf8;text-align:center;overflow:hidden}
+.countdown .section-kicker{color:#d5b878}
+.countdown .section-title{color:#fffdf8}
+.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;width:min(760px,92%);margin:48px auto 0}
+.unit{padding:25px 10px;border-top:1px solid rgba(213,184,120,.4);border-bottom:1px solid rgba(213,184,120,.4)}
+.num{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(44px,7vw,72px);line-height:1}
+.lab{margin-top:7px;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#d6dfd8}
+.save{margin-top:34px;color:#d5b878;font-size:13px;letter-spacing:2px}
+
+/* Footer */
+footer{text-align:center;padding:55px 20px;background:#23372d;color:#e9eee9}
+.footer-names{font-family:"Cormorant Garamond",Georgia,serif;font-size:42px}
+.footer-date{margin-top:10px;color:#bac8bd;font-size:12px;letter-spacing:2px}
+.footer-flower{margin-top:22px;color:#d5b878;font-size:23px}
+
+/* floating flowers */
+.flower{position:absolute;color:var(--gold);opacity:.20;font-size:35px;animation:flowerFloat 7s ease-in-out infinite}
+.f1{left:4%;top:16%}.f2{right:5%;bottom:12%;animation-delay:-3s}.f3{left:10%;bottom:18%;animation-delay:-5s}
+@keyframes flowerFloat{50%{transform:translateY(-14px) rotate(8deg)}}
+
+/* mobile */
+@media(max-width:820px){
+  section{padding:78px 0}
+  .events-grid{grid-template-columns:repeat(2,1fr)}
+  .invite-card{padding:45px 25px}
+  .parents{font-size:24px;gap:16px}
+}
+@media(max-width:560px){
+  .intro-border{inset:10px;border-radius:20px}
+  .peacock.left{width:110px;left:-25px}.peacock.right{width:115px;right:-28px}
+  .ganesh{width:88px;height:125px}
+  .names{font-size:clamp(54px,16vw,82px);letter-spacing:-1px}
+  .names .amp{margin:0 4px}
+  .date{letter-spacing:3px;font-size:11px}
+  .events-grid{grid-template-columns:1fr}
+  .event{min-height:250px}
+  .gallery-grid{grid-template-columns:1fr;gap:14px}
+  .photo{aspect-ratio:4/5}
+  .timer{gap:6px}.unit{padding:20px 4px}
+  .num{font-size:42px}.lab{font-size:8px;letter-spacing:1.5px}
+  .parents{flex-direction:column;gap:4px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- OPENING -->
+<section id="intro">
+  <div class="intro-border"></div>
+
+  <div class="peacock left" aria-hidden="true">
+    <svg viewBox="0 0 220 260" fill="none">
+      <path d="M92 245c-22-42-16-86 15-112 27-23 64-20 77 2 12 21-2 45-26 46-20 1-32-14-26-29 6-14 24-18 34-8" stroke="#456451" stroke-width="5" stroke-linecap="round"/>
+      <path d="M91 151C49 128 29 92 39 54c8-30 34-47 57-40 25 8 31 36 12 53-17 15-41 7-43-12" stroke="#456451" stroke-width="5" stroke-linecap="round"/>
+      <path d="M82 154C48 151 19 131 10 103" stroke="#b28a48" stroke-width="3"/>
+      <path d="M86 145c-26-13-42-31-47-54" stroke="#b28a48" stroke-width="3"/>
+      <path d="M102 132c17-25 47-39 74-31" stroke="#b28a48" stroke-width="3"/>
+      <circle cx="72" cy="82" r="7" fill="#b28a48"/>
+      <circle cx="132" cy="118" r="7" fill="#b28a48"/>
+    </svg>
+  </div>
+
+  <div class="peacock right" aria-hidden="true">
+    <svg viewBox="0 0 220 260" fill="none">
+      <path d="M92 245c-22-42-16-86 15-112 27-23 64-20 77 2 12 21-2 45-26 46-20 1-32-14-26-29 6-14 24-18 34-8" stroke="#456451" stroke-width="5" stroke-linecap="round"/>
+      <path d="M91 151C49 128 29 92 39 54c8-30 34-47 57-40 25 8 31 36 12 53-17 15-41 7-43-12" stroke="#456451" stroke-width="5" stroke-linecap="round"/>
+      <path d="M82 154C48 151 19 131 10 103" stroke="#b28a48" stroke-width="3"/>
+      <path d="M86 145c-26-13-42-31-47-54" stroke="#b28a48" stroke-width="3"/>
+      <path d="M102 132c17-25 47-39 74-31" stroke="#b28a48" stroke-width="3"/>
+      <circle cx="72" cy="82" r="7" fill="#b28a48"/>
+      <circle cx="132" cy="118" r="7" fill="#b28a48"/>
+    </svg>
+  </div>
+
+  <div class="intro-content">
+    <div class="om">ॐ &nbsp; • &nbsp; Shree Ganeshaya Namah &nbsp; • &nbsp; ॐ</div>
+    <img class="ganesh" src="assets/ganesh.png" alt="Lord Ganesha">
+    <div class="blessing">With the divine blessings of Lord Ganesha</div>
+    <div class="intro-rule"></div>
+    <div class="blessing">Together with our families</div>
+
+    <h1 class="names serif">Aakash <span class="amp">&amp;</span> Sunidhi</h1>
+
+    <div class="date">18 — 19 October 2026 &nbsp; · &nbsp; Dehradun</div>
+    <p class="tagline">Two hearts, one beautiful beginning, and a celebration made brighter by the people we love.</p>
+
+    <a class="open-btn" href="#invite">Open Invitation <span>↓</span></a>
+    <a class="scroll" href="#invite">Scroll to begin</a>
+  </div>
+</section>
+
+<!-- INVITATION -->
+<section class="invite" id="invite">
+  <div class="flower f1">✿</div>
+  <div class="flower f2">❀</div>
+  <div class="container">
+    <div class="section-kicker">With joy in our hearts</div>
+    <h2 class="section-title serif">We are getting married</h2>
+    <div class="flower-rule"><span>❧</span></div>
+    <p class="intro-text">It gives us immense pleasure to invite you to celebrate the wedding of Aakash &amp; Sunidhi. Come share our happiness, laughter and blessings as we begin a beautiful new chapter together.</p>
+
+    <div class="invite-card">
+      <p>
+        A heartfelt invitation to our dearest family and friends — your presence will make these celebrations even more special.
+        Please join us as two families come together in love, joy and blessings.
+      </p>
+      <div class="parents">
+        <span>Surender Rawat</span><i>•</i><span>Rachana Rawat</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="events" id="events">
+  <div class="container">
+    <div class="section-kicker">Mark your calendar</div>
+    <h2 class="section-title serif">The Celebrations</h2>
+    <div class="flower-rule"><span>✦</span></div>
+
+    <div class="events-grid">
+      <article class="event">
+        <div class="event-no">01 · 18 October 2026</div>
+        <div class="event-date">18 OCTOBER 2026</div>
+        <h3>Cocktail Evening</h3>
+        <div class="event-time">EVENING</div>
+        <div class="venue">Hotel Arya Palace<br>GMS Road, Dehradun<br>
+          <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hotel%20Arya%20Palace%2C%20GMS%20Road%2C%20Dehradun">Get Directions ↗</a>
+        </div>
+      </article>
+
+      <article class="event">
+        <div class="event-no">02 · 19 October 2026</div>
+        <div class="event-date">19 OCTOBER 2026</div>
+        <h3>Ganesh Puja</h3>
+        <div class="event-time">10:00 AM</div>
+        <div class="venue">Hotel Arya Palace<br>GMS Road, Dehradun<br>
+          <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hotel%20Arya%20Palace%2C%20GMS%20Road%2C%20Dehradun">Get Directions ↗</a>
+        </div>
+      </article>
+
+      <article class="event">
+        <div class="event-no">03 · 19 October 2026</div>
+        <div class="event-date">19 OCTOBER 2026</div>
+        <h3>Haldi</h3>
+        <div class="event-time">11:00 AM</div>
+        <div class="venue">Hotel Arya Palace<br>GMS Road, Dehradun<br>
+          <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hotel%20Arya%20Palace%2C%20GMS%20Road%2C%20Dehradun">Get Directions ↗</a>
+        </div>
+      </article>
+
+      <article class="event">
+        <div class="event-no">04 · 19 October 2026</div>
+        <div class="event-date">19 OCTOBER 2026</div>
+        <h3>The Wedding</h3>
+        <div class="event-time">7:00 PM</div>
+        <div class="venue">Viceroy Grand Hotel<br>GMS Road, Dehradun<br>
+          <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Viceroy%20Grand%20Hotel%2C%20GMS%20Road%2C%20Dehradun">Get Directions ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="moments">
+  <div class="container">
+    <div class="section-kicker">Our moments</div>
+    <h2 class="section-title serif">A little glimpse of us</h2>
+    <div class="flower-rule"><span>🦚</span></div>
+    <div class="gallery-grid">
+      <figure class="photo"><img src="assets/moment-1.jpg" alt="Aakash and Sunidhi walking together in the hills" loading="lazy"></figure>
+      <figure class="photo"><img src="assets/moment-2.jpg" alt="Aakash and Sunidhi together outdoors" loading="lazy"></figure>
+      <figure class="photo"><img src="assets/moment-3.jpg" alt="Aakash and Sunidhi in the misty hills" loading="lazy"></figure>
+      <figure class="photo"><img src="assets/moment-4.jpg" alt="Aakash and Sunidhi walking under an umbrella" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- MESSAGE -->
+<section class="message" id="message">
+  <div class="flower f3">❁</div>
+  <div class="container">
+    <div class="section-kicker">A message to our dearest family &amp; friends</div>
+    <h2 class="section-title serif">Your presence is our blessing</h2>
+    <div class="flower-rule"><span>❀</span></div>
+    <div class="message-card">
+      <p class="quote">“Every celebration becomes more meaningful when shared with the people we love.”</p>
+      <p class="message-copy">
+        Please join us, bless the couple and make these wedding celebrations truly unforgettable.
+        We look forward to welcoming you with open hearts and celebrating together as one family.
+      </p>
+      <div class="signature">With warmest regards &amp; love,<br><strong>Surender &amp; Rachana</strong></div>
+      <a class="rsvp" target="_blank" rel="noopener" href="https://wa.me/918285893484?text=Hello%20Aakash%20%26%20Sunidhi%2C%20we%20would%20love%20to%20join%20your%20wedding%20celebrations.%20Congratulations%21">💬 RSVP on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown">
+  <div class="container">
+    <div class="section-kicker">Counting the moments</div>
+    <h2 class="section-title serif">Until we say “I do”</h2>
+    <div class="timer" aria-live="polite">
+      <div class="unit"><div class="num" id="days">—</div><div class="lab">Days</div></div>
+      <div class="unit"><div class="num" id="hours">—</div><div class="lab">Hours</div></div>
+      <div class="unit"><div class="num" id="minutes">—</div><div class="lab">Minutes</div></div>
+      <div class="unit"><div class="num" id="seconds">—</div><div class="lab">Seconds</div></div>
+    </div>
+    <div class="save">19 OCTOBER 2026 · 7:00 PM · DEHRADUN</div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-names">Aakash &amp; Sunidhi</div>
+  <div class="footer-date">18 · 19 OCTOBER 2026 · DEHRADUN</div>
+  <div class="footer-flower">❀ &nbsp; 🦚 &nbsp; ❀</div>
+</footer>
+
+<script>
+(function(){
+  // Wedding date: 19 October 2026 at 7:00 PM IST (UTC+05:30).
+  const target = new Date("2026-10-19T19:00:00+05:30").getTime();
+  const ids = ["days","hours","minutes","seconds"];
+
+  function update(){
+    let diff = target - Date.now();
+    if(diff < 0) diff = 0;
+    const d = Math.floor(diff/86400000);
+    const h = Math.floor((diff%86400000)/3600000);
+    const m = Math.floor((diff%3600000)/60000);
+    const s = Math.floor((diff%60000)/1000);
+    [d,h,m,s].forEach((v,i)=>document.getElementById(ids[i]).textContent=String(v).padStart(2,"0"));
+  }
+  update();
+  setInterval(update,1000);
+})();
+</script>
+</body>
+</html>
